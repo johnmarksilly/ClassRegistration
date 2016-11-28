@@ -1,0 +1,15 @@
+﻿.umnInputDropdown {
+    border: 0.12em solid;
+    border-radius: 1.5em;
+    height: 3em;
+}
+
+    .umnInputDropdown div {
+        height: inherit;
+    }
+
+        .umnInputDropdown div input {
+            height: inherit;
+            border: none;
+            background: none;
+        }

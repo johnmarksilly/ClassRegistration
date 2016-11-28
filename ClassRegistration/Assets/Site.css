@@ -1,0 +1,82 @@
+﻿html, body {
+    margin: 0;
+    background: #ffcc33;
+}
+
+.umn-primary,
+.umn-primary * {
+    outline: none;
+    color: #7a0019;
+    border-color: #7a0019;
+    background-color: unset;
+}
+
+    .hover.umn-primary:hover,
+    .hover.umn-primary:active,
+    .hover.umn-primary:focus {
+        color: #ffcc33;
+        border-color: #ffcc33;
+        background-color: #7a0019;
+    }
+
+    .hover.umn-primary:hover * {
+        color: #ffcc33;
+    }
+
+    .hover.umn-primary:active,
+    .hover.umn-primary:focus {
+        outline: none;
+        color: #7a0019;
+        border-color: #7a0019;
+    }
+
+.umn-accent,
+.umn-accent * {
+    outline: none;
+    color: #ffcc33;
+    border-color: #ffcc33;
+    background-color: unset;
+}
+
+    .hover.umn-accent:hover,
+    .hover.umn-accent:active,
+    .hover.umn-accent:focus {
+        background-color: #ffcc33;
+    }
+
+        .hover.umn-accent:hover *,
+        .hover.umn-accent:active *,
+        .hover.umn-accent:focus * {
+            color: #7a0019;
+            border-color: #7a0019;
+        }
+
+    .hover.umn-accent:hover * {
+        color: #7a0019;
+    }
+
+    .hover.umn-accent:active {
+        background-color: unset;
+    }
+
+        .hover.umn-accent:active * {
+            color: #ffcc33;
+            border-color: #ffcc33;
+        }
+
+
+::-webkit-input-placeholder {
+   color: rgba(255, 255, 255, 0.5);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(255, 255, 255, 0.5);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(255, 255, 255, 0.5);
+}
+
+:-ms-input-placeholder {  
+   color: rgba(255, 255, 255, 0.4);
+}

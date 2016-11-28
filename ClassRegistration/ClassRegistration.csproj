@@ -213,6 +213,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -223,8 +224,28 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\components\umnButton\umnButton.controller.js" />
+    <Content Include="app\components\umnButton\umnButton.directive.js" />
+    <Content Include="app\components\umnButton\umnButton.style.css" />
+    <Content Include="app\components\umnButton\umnButton.view.html" />
+    <Content Include="app\components\umnCourse\umnCourse.controller.js" />
+    <Content Include="app\components\umnCourse\umnCourse.directive.js" />
+    <Content Include="app\components\umnCourse\umnCourse.style.css" />
+    <Content Include="app\components\umnCourse\umnCourse.view.html" />
+    <Content Include="app\components\umnDropdown\umnDropdown.controller.js" />
+    <Content Include="app\components\umnDropdown\umnDropdown.directive.js" />
+    <Content Include="app\components\umnDropdown\umnDropdown.view.html" />
+    <Content Include="app\components\umnDropdown\umnDropdown.style.css" />
+    <Content Include="app\components\umnInputDropdown\umnInputDropdown.style.css" />
+    <Content Include="app\components\umnInputDropdown\umnInputDropdown.controller.js" />
+    <Content Include="app\components\umnInputDropdown\umnInputDropdown.directive.js" />
+    <Content Include="app\components\umnInputDropdown\umnInputDropdown.view.html" />
+    <Content Include="app\layout\navigation\navigation.controller.js" />
+    <Content Include="app\layout\navigation\navigation.directive.js" />
+    <Content Include="app\layout\navigation\navigation.style.css" />
+    <Content Include="app\layout\navigation\navigation.view.html" />
     <Content Include="app\umn.module.js" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Assets\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="ApplicationInsights.config">
@@ -249,7 +270,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

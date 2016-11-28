@@ -1,0 +1,14 @@
+﻿<div layout="column" layout-align="stretch stretch" class="umnDropdown hover umn-accent">
+    <div layout="row" layout-align="space-between center" ng-click="dropdownVm.toggle()">
+        <span>{{dropdownVm.selected.title}}</span>
+        <span>
+            <i ng-hide="dropdownVm.isOpen" class="material-icons">arrow_drop_down</i>
+            <i ng-show="dropdownVm.isOpen" class="material-icons">arrow_drop_up</i>
+        </span>
+    </div>
+    <div class="item-list" ng-if="dropdownVm.isOpen">
+        <div layout="column" layout-align="center start" ng-click="dropdownVm.select($index)" ng-repeat="item in dropdownVm.itemList track by $index" class="list-item">
+            <span>{{item.title}}</span>
+        </div>
+    </div>
+</div>

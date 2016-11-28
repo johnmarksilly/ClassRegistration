@@ -1,0 +1,45 @@
+﻿.umnDropdown {
+    cursor: pointer;
+    height: 3em;
+    width: 8em;
+    padding: 0.5em;
+    border: 0.12em solid;
+    border-radius: 1.5em;
+}
+
+    .umnDropdown, 
+    .umnDropdown * {
+        /*transition: all 0.4s;*/
+    }
+    
+    .umnDropdown i {
+        transition: unset;
+    }
+
+    .umnDropdown div:first-child {
+        height: inherit;
+        width: inherit;
+    }
+
+    .umnDropdown div span:first-child {
+        margin-left: .5em;
+    }
+
+    .umnDropdown div span:last-child {
+        margin-right: .5em;
+    }
+
+    .umnDropdown .item-list {
+        position: absolute;
+        top: 0;
+        margin-top: 3em;
+        margin-left: -0.5em;
+        margin-right: -0.5em;
+        background-color: white;
+        width: inherit;
+        z-index: 10;
+    }
+
+        .umnDropdown .item-list .list-item {
+            height: 3em;
+        }
