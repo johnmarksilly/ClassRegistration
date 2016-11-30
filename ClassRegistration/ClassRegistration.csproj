@@ -236,6 +236,10 @@
     <Content Include="app\components\umnDropdown\umnDropdown.directive.js" />
     <Content Include="app\components\umnDropdown\umnDropdown.view.html" />
     <Content Include="app\components\umnDropdown\umnDropdown.style.css" />
+    <Content Include="app\components\umnInfoBox\umnInfoBox.controller.js" />
+    <Content Include="app\components\umnInfoBox\umnInfoBox.directive.js" />
+    <Content Include="app\components\umnInfoBox\umnInfoBox.style.css" />
+    <Content Include="app\components\umnInfoBox\umnInfoBox.view.html" />
     <Content Include="app\components\umnInputDropdown\umnInputDropdown.style.css" />
     <Content Include="app\components\umnInputDropdown\umnInputDropdown.controller.js" />
     <Content Include="app\components\umnInputDropdown\umnInputDropdown.directive.js" />

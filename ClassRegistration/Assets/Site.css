@@ -11,6 +11,15 @@
     background-color: unset;
 }
 
+.umn-primary.bg-color {
+    color: #ffcc33;
+    background: #7a0019;
+}
+
+    .umn-primary.bg-color * {
+        color: #ffcc33 !important;
+    }
+
     .hover.umn-primary:hover,
     .hover.umn-primary:active,
     .hover.umn-primary:focus {
@@ -62,6 +71,15 @@
         .hover.umn-accent:active * {
             color: #ffcc33;
             border-color: #ffcc33;
+        }
+
+    .umn-accent.bg-color {
+        color: #7a0019;
+        background-color: #ffcc33;
+    }
+
+        .umn-accent.bg-color * {
+            color: #7a0019;
         }
 
 

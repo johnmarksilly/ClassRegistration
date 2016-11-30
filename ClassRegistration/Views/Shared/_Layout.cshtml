@@ -18,21 +18,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular-aria.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular-animate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+</head>
+<body ng-app="umn">
+    @RenderBody()
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Class Registration</p>
+    </footer>
 
-    <!-- Angular Material -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js"></script>
+    <div id="scripts">
+        <!-- Angular Material -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js"></script>
 
-    <!-- App -->
-    <script src="~/app/umn.module.js"></script>
+        <!-- App -->
+        <script src="~/app/umn.module.js"></script>
 
-    <!-- Layout -->
+        <!-- Layout -->
         <!-- Navigation -->
-        <script src="~/app/layout/navigation/navigation.controller.js"></script>    
+        <script src="~/app/layout/navigation/navigation.controller.js"></script>
         <script src="~/app/layout/navigation/navigation.directive.js"></script>
         <link rel="stylesheet" href="~/app/layout/navigation/navigation.style.css" />
 
-    <!-- Components -->
+        <!-- Components -->
         <!-- umnButton -->
         <script src="~/app/components/umnButton/umnButton.controller.js"></script>
         <script src="~/app/components/umnButton/umnButton.directive.js"></script>
@@ -48,15 +55,15 @@
         <script src="~/app/components/umnInputDropdown/umnInputDropdown.directive.js"></script>
         <link rel="stylesheet" href="~/app/components/umnInputDropdown/umnInputDropdown.style.css" />
 
+        <!-- umnInfoBox -->
+        <script src="~/app/components/umnInfoBox/umnInfoBox.controller.js"></script>
+        <script src="~/app/components/umnInfoBox/umnInfoBox.directive.js"></script>
+        <link rel="stylesheet" href="~/app/components/umnInfoBox/umnInfoBox.style.css" />
+
         <!-- umnCourse -->
         <script src="~/app/components/umnCourse/umnCourse.controller.js"></script>
         <script src="~/app/components/umnCourse/umnCourse.directive.js"></script>
         <link rel="stylesheet" href="~/app/components/umnCourse/umnCourse.style.css" />
-</head>
-<body ng-app="umn">
-    @RenderBody()
-    <footer>
-        <p>&copy; @DateTime.Now.Year - Class Registration</p>
-    </footer>
+    </div>
 </body>
 </html>
