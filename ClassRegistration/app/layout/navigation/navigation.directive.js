@@ -11,6 +11,11 @@
         return {
             restrict: 'E',
             replace: true,
+            scope: {
+                showSearch: '=',
+                searchFunction: '='
+            },
+            bindToController: true,
             templateUrl: 'app/layout/navigation/navigation.view.html',
             controller: 'NavigationController',
             controllerAs: 'navVm'

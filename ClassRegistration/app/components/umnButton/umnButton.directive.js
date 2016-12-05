@@ -11,7 +11,8 @@
             replace: true,
             scope: {
                 title: '=',
-                icon: '='
+                icon: '=',
+                direction: '='
             },
             bindToController: true,
             templateUrl: 'app/components/umnButton/umnButton.view.html',

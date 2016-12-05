@@ -1,9 +1,15 @@
 ﻿<navigation layout="row" layout-align="space-between center">
-    <umn-button title="'test'" icon="'search'" class="umn-accent"></umn-button>
-    <div layout="row">
-        <umn-input-dropdown></umn-input-dropdown>
-        <umn-dropdown></umn-dropdown>
-        <umn-button title="'Search'" icon="'search'" class="umn-accent"></umn-button>
+    <div layout="row" layout-align="start center">
+        <h2 class="umn-accent">Course Registration</h2>
+        <div ng-if="navVm.showSearch" layout="row">
+            <umn-input-dropdown search-text="navVm.searchText" semester="navVm.selectedSemester"></umn-input-dropdown>
+            <umn-dropdown></umn-dropdown>
+            <umn-button title="'Search'" icon="'search'" direction="'right'" ng-click="navVm.searchFunction(navVm.searchText)" class="umn-accent"></umn-button>
+        </div>
     </div>
-    <div></div>
+    <div layout="row" layout-align="end center">
+        <umn-button hide-gt-sm title="'Cart'" icon="'shopping_cart'" direction="'left'" class="umn-accent"></umn-button>
+        <umn-button ng-if="navVm.currentState == 'schedule'" title="'Search'" icon="'search'" direction="'left'" ui-sref="search" ng-click="navVm.go('search')" class="umn-accent"></umn-button>
+        <umn-button ng-if="navVm.currentState == 'search'" title="'Calendar'" icon="'event'" direction="'left'" ng-click="navVm.go('schedule')" class="umn-accent"></umn-button>
+    </div>
 </navigation>

@@ -1,6 +1,11 @@
 ﻿html, body {
     margin: 0;
     background: #ffcc33;
+    /*background: white;*/
+}
+
+md-content {
+    background-color: unset;
 }
 
 .umn-primary,
@@ -21,10 +26,8 @@
     }
 
     .hover.umn-primary:hover,
-    .hover.umn-primary:active,
     .hover.umn-primary:focus {
         color: #ffcc33;
-        border-color: #ffcc33;
         background-color: #7a0019;
     }
 
@@ -32,7 +35,6 @@
         color: #ffcc33;
     }
 
-    .hover.umn-primary:active,
     .hover.umn-primary:focus {
         outline: none;
         color: #7a0019;
@@ -43,38 +45,30 @@
 .umn-accent * {
     outline: none;
     color: #ffcc33;
+    /*color: white;*/
     border-color: #ffcc33;
+    /*border-color: white;*/
     background-color: unset;
 }
 
     .hover.umn-accent:hover,
-    .hover.umn-accent:active,
     .hover.umn-accent:focus {
         background-color: #ffcc33;
+        /*background-color: white;*/
     }
 
         .hover.umn-accent:hover *,
-        .hover.umn-accent:active *,
         .hover.umn-accent:focus * {
             color: #7a0019;
-            border-color: #7a0019;
         }
 
     .hover.umn-accent:hover * {
         color: #7a0019;
     }
 
-    .hover.umn-accent:active {
-        background-color: unset;
-    }
-
-        .hover.umn-accent:active * {
-            color: #ffcc33;
-            border-color: #ffcc33;
-        }
-
     .umn-accent.bg-color {
         color: #7a0019;
+        /*background-color: white;*/
         background-color: #ffcc33;
     }
 

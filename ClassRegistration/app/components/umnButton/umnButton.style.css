@@ -4,33 +4,36 @@
     border: 0.12em solid;
     height: 3em;
     max-width: 3em;
-    min-width: 3em;
+    width: auto;
+    padding: 0.4em 0.7em;
     white-space: nowrap;
-    transition: all 0.4s;
+    transition: max-width 0.3s, color 0.3s, background-color 0.3s, border-color 0.3s;
     overflow-x: hidden;
     background-color: unset;
 }
-    .umnButton, 
-    .umnButton * {
-        transition: max-width 0.4s;
+
+    .umnButton:hover i.left {
+        margin-left: 0.4em;
     }
 
-        .umnButton div:first-child {
-            /*margin: 0 0.4em;*/
-        }
+    .umnButton:hover i.right {
+        margin-right: 0.4em;
+    }
 
     .umnButton span {
         display: none;
     }
 
     .umnButton:hover,
-    .umnButton:active,
     .umnButton:focus {
         max-width: 10em;
     }
 
         .umnButton:hover span,
-        .umnButton:active span,
         .umnButton:focus span {
             display: inline-block;
         }
+
+    .umnButton:not(:last-child) {
+        margin-right: 0.4em;
+    }

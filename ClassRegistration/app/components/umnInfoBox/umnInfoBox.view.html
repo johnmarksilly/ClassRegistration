@@ -1,7 +1,16 @@
-﻿<div layout="row" layout-align="start center" class="info-box umn-primary bg-color">
-    <i class="material-icons">{{infoBoxVm.ibIcon}}</i>
-    <div layout="column" layout-align="start center">
-        <span><strong>{{infoBoxVm.ibTitle}}</strong></span>
-        <span>{{infoBoxVm.ibContent}}</span>
+﻿<div layout="column" layout-align="center center" ng-mouseover="infoBoxVm.show = true" ng-mouseleave="infoBoxVm.show = false" class="info-box umn-primary hover">
+    <div ng-if="infoBoxVm.ibDirection == 'left'" layout="row" layout-align="end center">
+        <div ng-if="infoBoxVm.show" layout="column" layout-align="end center">
+            <span><strong>{{infoBoxVm.ibTitle}}</strong></span>
+            <span>{{infoBoxVm.ibContent}}</span>
+        </div>
+        <i class="material-icons left">{{infoBoxVm.ibIcon}}</i>
+    </div>
+    <div ng-if="infoBoxVm.ibDirection == 'right'" layout="row" layout-align="start center">
+        <i class="material-icons right">{{infoBoxVm.ibIcon}}</i>
+        <div ng-if="infoBoxVm.show" layout="column" layout-align="start center">
+            <span><strong>{{infoBoxVm.ibTitle}}</strong></span>
+            <span>{{infoBoxVm.ibContent}}</span>
+        </div>
     </div>
 </div>

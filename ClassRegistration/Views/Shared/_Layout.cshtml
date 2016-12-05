@@ -21,9 +21,6 @@
 </head>
 <body ng-app="umn">
     @RenderBody()
-    <footer>
-        <p>&copy; @DateTime.Now.Year - Class Registration</p>
-    </footer>
 
     <div id="scripts">
         <!-- Angular Material -->
@@ -32,38 +29,63 @@
 
         <!-- App -->
         <script src="~/app/umn.module.js"></script>
+        <script src="~/app/umn.config.js"></script>
+
+        <!-- Services -->
+            <script src="~/app/services/course.service.js"></script>
+            <script src="~/app/services/shoppingCart.service.js"></script>
+            <script src="~/app/services/schedule.service.js"></script>
 
         <!-- Layout -->
-        <!-- Navigation -->
-        <script src="~/app/layout/navigation/navigation.controller.js"></script>
-        <script src="~/app/layout/navigation/navigation.directive.js"></script>
-        <link rel="stylesheet" href="~/app/layout/navigation/navigation.style.css" />
+            <!-- Navigation -->
+            <script src="~/app/layout/navigation/navigation.controller.js"></script>
+            <script src="~/app/layout/navigation/navigation.directive.js"></script>
+            <link rel="stylesheet" href="~/app/layout/navigation/navigation.style.css" />
 
-        <!-- Components -->
-        <!-- umnButton -->
-        <script src="~/app/components/umnButton/umnButton.controller.js"></script>
-        <script src="~/app/components/umnButton/umnButton.directive.js"></script>
-        <link rel="stylesheet" href="~/app/components/umnButton/umnButton.style.css" />
+            <!-- Components -->
+            <!-- umnButton -->
+            <script src="~/app/components/umnButton/umnButton.controller.js"></script>
+            <script src="~/app/components/umnButton/umnButton.directive.js"></script>
+            <link rel="stylesheet" href="~/app/components/umnButton/umnButton.style.css" />
 
-        <!-- umnDropdown -->
-        <script src="~/app/components/umnDropdown/umnDropdown.controller.js"></script>
-        <script src="~/app/components/umnDropdown/umnDropdown.directive.js"></script>
-        <link rel="stylesheet" href="~/app/components/umnDropdown/umnDropdown.style.css" />
+            <!-- umnDropdown -->
+            <script src="~/app/components/umnDropdown/umnDropdown.controller.js"></script>
+            <script src="~/app/components/umnDropdown/umnDropdown.directive.js"></script>
+            <link rel="stylesheet" href="~/app/components/umnDropdown/umnDropdown.style.css" />
 
-        <!-- umnInputDropdown -->
-        <script src="~/app/components/umnInputDropdown/umnInputDropdown.controller.js"></script>
-        <script src="~/app/components/umnInputDropdown/umnInputDropdown.directive.js"></script>
-        <link rel="stylesheet" href="~/app/components/umnInputDropdown/umnInputDropdown.style.css" />
+            <!-- umnInputDropdown -->
+            <script src="~/app/components/umnInputDropdown/umnInputDropdown.controller.js"></script>
+            <script src="~/app/components/umnInputDropdown/umnInputDropdown.directive.js"></script>
+            <link rel="stylesheet" href="~/app/components/umnInputDropdown/umnInputDropdown.style.css" />
 
-        <!-- umnInfoBox -->
-        <script src="~/app/components/umnInfoBox/umnInfoBox.controller.js"></script>
-        <script src="~/app/components/umnInfoBox/umnInfoBox.directive.js"></script>
-        <link rel="stylesheet" href="~/app/components/umnInfoBox/umnInfoBox.style.css" />
+            <!-- umnInfoBox -->
+            <script src="~/app/components/umnInfoBox/umnInfoBox.controller.js"></script>
+            <script src="~/app/components/umnInfoBox/umnInfoBox.directive.js"></script>
+            <link rel="stylesheet" href="~/app/components/umnInfoBox/umnInfoBox.style.css" />
 
-        <!-- umnCourse -->
-        <script src="~/app/components/umnCourse/umnCourse.controller.js"></script>
-        <script src="~/app/components/umnCourse/umnCourse.directive.js"></script>
-        <link rel="stylesheet" href="~/app/components/umnCourse/umnCourse.style.css" />
+            <!-- umnCourse -->
+            <script src="~/app/components/umnCourse/umnCourse.controller.js"></script>
+            <script src="~/app/components/umnCourse/umnCourse.directive.js"></script>
+            <link rel="stylesheet" href="~/app/components/umnCourse/umnCourse.style.css" />
+
+            <!-- umnSimpleCourse -->
+            <script src="~/app/components/umnSimpleCourse/umnSimpleCourse.controller.js"></script>
+            <script src="~/app/components/umnSimpleCourse/umnSimpleCourse.directive.js"></script>
+            <link rel="stylesheet" href="~/app/components/umnSimpleCourse/umnSimpleCourse.style.css" />
+
+            <!-- umnShoppingCart -->
+            <script src="~/app/components/umnShoppingCart/umnShoppingCart.controller.js"></script>    
+            <script src="~/app/components/umnShoppingCart/umnShoppingCart.directive.js"></script>
+            <link rel="stylesheet" href="~/app/components/umnShoppingCart/umnShoppingCart.style.css" />
+
+        <!-- Views -->
+            <!-- search -->
+            <script src="~/app/search/search.controller.js"></script>
+            <link rel="stylesheet" href="~/app/search/search.style.css"/>
+
+            <!-- calendar -->
+            <script src="~/app/schedule/schedule.controller.js"></script>
+            <link rel="stylesheet" href="~/app/schedule/schedule.style.css" />
     </div>
 </body>
 </html>

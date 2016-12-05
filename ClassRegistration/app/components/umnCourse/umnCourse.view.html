@@ -1,20 +1,24 @@
-﻿<div class="umn-course umn-primary">
-    <div layout="row" layout-align="space-between stretch" class="header umn-primary bg-color">
-        <div layout="row" layout-align="start center" flex="80" class="title">
-            <h1>GDES 2131</h1>
-            <h2>Advanced Web Design</h2>
+﻿<div layout="column" class="umn-course umn-primary">
+    <div layout="column" flex>
+        <div layout="row" layout-align="space-between stretch" class="header umn-primary bg-color">
+            <div layout="row" layout-align="start center" flex="80" class="title">
+                <h1>{{courseVm.course.key}}</h1>
+                <h2>{{courseVm.course.title}}</h2>
+            </div>
+            <div class="credits">
+                <h2>{{courseVm.course.credits}} credits</h2>
+            </div>
         </div>
-        <div class="credits">
-            <h2>3 credits</h2>
+        <div flex class="content-container">
+            <p>{{courseVm.course.description}}</p>
         </div>
     </div>
     <div layout="row" layout-align="start center" class="info-box-container umn-accent bg-color">
-        <umn-info-box ib-icon="'people'" ib-title="'Available Seats'" ib-content="'3/100'"></umn-info-box>
-        <umn-info-box ib-icon="'location_on'" ib-title="'Location'" ib-content="'RM 310 McNeal Hall'"></umn-info-box>
+        <umn-info-box ib-icon="information.icon" ib-title="information.title" ib-content="information.content" ib-direction="'right'" ng-repeat="information in courseVm.course.information track by $index"></umn-info-box>
     </div>
 
     <div layout="row" layout-align="start center" class="button-container umn-accent bg-color">
-        <umn-button title="'Information'" icon="'more_vert'" class="umn-primary"></umn-button>
-        <umn-button title="'Add'" icon="'add_shopping_cart'" class="umn-primary"></umn-button>
+        <umn-button title="'Information'" icon="'more_vert'" direction="'left'" class="umn-primary"></umn-button>
+        <umn-button title="'Add'" icon="'add_shopping_cart'" direction="'left'" class="umn-primary"></umn-button>
     </div>
 </div>

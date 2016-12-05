@@ -213,17 +213,26 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\API\CourseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Enums\Semester.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Course\Course.cs" />
+    <Compile Include="Models\Course\Information.cs" />
+    <Compile Include="Models\Course\Section.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
+    <Compile Include="Services\CourseService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\schedule\schedule.controller.js" />
+    <Content Include="app\schedule\schedule.style.css" />
+    <Content Include="app\schedule\schedule.view.html" />
     <Content Include="app\components\umnButton\umnButton.controller.js" />
     <Content Include="app\components\umnButton\umnButton.directive.js" />
     <Content Include="app\components\umnButton\umnButton.style.css" />
@@ -244,10 +253,25 @@
     <Content Include="app\components\umnInputDropdown\umnInputDropdown.controller.js" />
     <Content Include="app\components\umnInputDropdown\umnInputDropdown.directive.js" />
     <Content Include="app\components\umnInputDropdown\umnInputDropdown.view.html" />
+    <Content Include="app\components\umnShoppingCart\umnShoppingCart.controller.js" />
+    <Content Include="app\components\umnShoppingCart\umnShoppingCart.directive.js" />
+    <Content Include="app\components\umnShoppingCart\umnShoppingCart.style.css" />
+    <Content Include="app\components\umnShoppingCart\umnShoppingCart.view.html" />
+    <Content Include="app\components\umnSimpleCourse\umnSimpleCourse.controller.js" />
+    <Content Include="app\components\umnSimpleCourse\umnSimpleCourse.directive.js" />
+    <Content Include="app\components\umnSimpleCourse\umnSimpleCourse.style.css" />
+    <Content Include="app\components\umnSimpleCourse\umnSimpleCourse.view.html" />
     <Content Include="app\layout\navigation\navigation.controller.js" />
     <Content Include="app\layout\navigation\navigation.directive.js" />
     <Content Include="app\layout\navigation\navigation.style.css" />
     <Content Include="app\layout\navigation\navigation.view.html" />
+    <Content Include="app\search\search.controller.js" />
+    <Content Include="app\search\search.style.css" />
+    <Content Include="app\search\search.view.html" />
+    <Content Include="app\services\course.service.js" />
+    <Content Include="app\services\schedule.service.js" />
+    <Content Include="app\services\shoppingCart.service.js" />
+    <Content Include="app\umn.config.js" />
     <Content Include="app\umn.module.js" />
     <Content Include="Assets\Site.css" />
     <Content Include="favicon.ico" />

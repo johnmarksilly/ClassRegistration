@@ -10,6 +10,7 @@
             restrict: 'E',
             replace: true,
             scope: {
+                course: '='
             },
             bindToController: true,
             templateUrl: 'app/components/umnCourse/umnCourse.view.html',

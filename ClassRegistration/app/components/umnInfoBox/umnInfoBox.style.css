@@ -1,3 +1,28 @@
-﻿.umn-info-box {
-
+﻿.info-box {
+    border: none;
+    border: 0.12em solid;
+    height: 3em;
+    padding: 0.4em 0.7em;
+    cursor: default;
+    max-width: 3em;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: max-width 0.3s, color 0.3s, background-color 0.3s;
 }
+
+    .info-box:hover i.left {
+        margin-left: 0.4em;
+    }
+
+    .info-box:hover i.right {
+        margin-right: 0.4em;
+    }
+    
+    .info-box:hover {
+        max-width: 20em;
+    }
+
+    .info-box:not(:last-child){
+        margin-right: 0.4em;
+    }

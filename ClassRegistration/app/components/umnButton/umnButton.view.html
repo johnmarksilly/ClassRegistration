@@ -1,6 +1,14 @@
-﻿<button layout="column" layout-align="center start" class="umnButton hover">
-    <div layout="row" layout-align="center center">
-        <i class="material-icons">{{buttonVm.icon}}</i>
-        <span>{{buttonVm.title}}</span>
+﻿<button ng-mouseover="buttonVm.show = true" ng-mouseleave="buttonVm.show = false" class="umnButton umn-primary hover">
+    <div ng-if="buttonVm.direction == 'left'" layout="row" layout-align="end center">
+        <div ng-if="buttonVm.show" layout="column" layout-align="start center">
+            <span>{{buttonVm.title}}</span>
+        </div>
+        <i class="material-icons left">{{buttonVm.icon}}</i>
+    </div>
+    <div ng-if="buttonVm.direction == 'right'" layout="row" layout-align="start center">
+        <i class="material-icons right">{{buttonVm.icon}}</i>
+        <div ng-if="buttonVm.show" layout="column" layout-align="start center">
+            <span>{{buttonVm.title}}</span>
+        </div>
     </div>
 </button>

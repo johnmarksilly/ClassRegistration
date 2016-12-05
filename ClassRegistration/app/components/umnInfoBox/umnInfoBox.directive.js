@@ -15,7 +15,8 @@
             scope: {
                 ibIcon: '=',
                 ibTitle: '=',
-                ibContent: '='
+                ibContent: '=',
+                ibDirection: '='
             },
             bindToController: true
         };
