@@ -3,9 +3,9 @@
         <h1>Shopping Cart</h1>
     </div>
     <div flex>
-        <umn-simple-course></umn-simple-course>
+        <umn-simple-course course="course" index="$index" ng-repeat="course in cartVm.classes track by $index"></umn-simple-course>
     </div>
     <div>
-        <umn-button title="'Checkout'" icon="'check'" direction="'right'"></umn-button>
+        <umn-button ng-click="cartVm.checkout()" ng-disabled="cartVm.classes.length == 0" title="'Checkout'" icon="'check'" direction="'right'"></umn-button>
     </div>
 </div>

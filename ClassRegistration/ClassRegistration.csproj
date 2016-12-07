@@ -194,6 +194,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\components\umnDay\umnDay.controller.js" />
+    <Content Include="app\components\umnDay\umnDay.directive.js" />
+    <Content Include="app\components\umnDay\umnDay.style.css" />
+    <Content Include="app\components\umnDay\umnDay.view.html" />
     <Content Include="app\schedule\schedule.controller.js" />
     <Content Include="app\schedule\schedule.style.css" />
     <Content Include="app\schedule\schedule.view.html" />
@@ -263,11 +267,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="app\components\umnSection\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <None Include="Project_Readme.html" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

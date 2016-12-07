@@ -10,7 +10,8 @@
             restrict: 'E',
             replace: true,
             scope: {
-                section: '='
+                section: '=',
+                course: '='
             },
             bindToController: true,
             templateUrl: 'app/components/umnSection/umnSection.view.html',

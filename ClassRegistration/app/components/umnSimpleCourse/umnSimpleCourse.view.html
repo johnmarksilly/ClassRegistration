@@ -1,5 +1,4 @@
-﻿<div layout="row">
-    <h1>{{courseVm.key}}</h1>
-    <h2>{{courseVm.title}}</h2>
-    <i ng-click="courseVm.remove()" class="material-icons">delete</i>
+﻿<div layout="row" layout-align="space-between center" class="umn-simple-course">
+    <h1>{{simpleCourseVm.course.course.key}}</h1>
+    <umn-button ng-click="simpleCourseVm.remove(simpleCourseVm.index)" title="'Remove'" icon="'delete'" direction="'left'"></umn-button>
 </div>

@@ -19,6 +19,6 @@
         </div>
 	</div>
     <div ng-if="courseVm.isExpanded" class="sections">
-        <umn-section section="section" ng-repeat="section in courseVm.course.sections track by $index"></umn-section>
+        <umn-section section="section" course="courseVm.course" ng-repeat="section in courseVm.course.sections track by $index"></umn-section>
     </div>
 </div>
