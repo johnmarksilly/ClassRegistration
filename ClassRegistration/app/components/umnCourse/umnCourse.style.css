@@ -1,12 +1,23 @@
 ﻿.umn-course {
-    position: relative;
     margin: 2em auto;
-    border: 0.15em solid;
-    max-height: 400px;
+    margin-bottom: 5em;
     max-width: 750px;
 }
 
-    .umn-course:not(:first-child) {
+    .umn-course .information {
+        position: relative;
+        border: 0.15em solid ;
+    }
+
+    .umn-course .sections {
+        margin-left: 1em;
+    }
+
+    .umn-course .sections .umn-section:first-child {
+        margin-top: 2em;
+    }
+
+    .umn-course .sections .umn-section:not(:first-child) {
         margin-top: 3em;
     }
 
@@ -30,16 +41,7 @@
         }
 
     .umn-course .content-container {
-        padding: 0 1em;
-        margin-bottom: 1.5em;
-    }
-
-    .umn-course .info-box-container {
-        position: absolute;
-        left: 1em;
-        bottom: -1.5em;
-        height: 3em;
-        padding: 0.4em;
+        padding: 1.2em;
     }
 
     .umn-course .button-container {

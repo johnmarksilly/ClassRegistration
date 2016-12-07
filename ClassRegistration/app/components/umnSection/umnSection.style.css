@@ -1,0 +1,39 @@
+﻿.umn-section {
+    position: relative;
+    border-width: 0.15em;
+    border-bottom-style: solid;
+    height: 5em;
+}
+
+    .umn-section .inner-container {
+        position: relative;
+        height: inherit;
+    }
+
+    .umn-section .header {
+        padding: 0 1em;
+        height: 3em;
+    }
+        
+        .umn-section .header h1 {
+            margin-right: 0.4em;
+        }
+
+        .umn-section .header h2 {
+            font-weight: 100;
+        }
+
+    .umn-section .info-box-container {
+        position: absolute;
+        bottom: -1.5em;
+        height: 3em;
+        padding-right: 0.4em;
+    }
+
+    .umn-section .button-container {
+        position: absolute;
+        right: 0;
+        bottom: -1.5em;
+        height: 3em;
+        padding-right: 0;
+    }

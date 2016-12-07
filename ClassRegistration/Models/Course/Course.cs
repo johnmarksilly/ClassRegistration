@@ -45,7 +45,7 @@ namespace ClassRegistration.Models.Course
         [JsonProperty("sections")]
         public List<Section> Sections { get; set; }
 
-        public Course(Guid id, string major, int number, string title, string description, Semester semester, int credits, List<Section> sections)
+        public Course(Guid id, string major, int number, string title, string description, Semester semester, int credits, Random random)
         {
             Id = id;
             Major = major;
@@ -54,7 +54,20 @@ namespace ClassRegistration.Models.Course
             Description = description;
             Semester = semester;
             Credits = credits;
-            Sections = sections;
+            Sections = generateSections(random);
+        }
+
+        List<Section> generateSections(Random random)
+        {
+            var sections = new List<Section>();
+            var id = random.Next(40000, 49000);
+
+            for (int i = 0; i < random.Next(0, 8); i++)
+            {
+                sections.Add(new Section(id + i, i + 1, random));
+            }
+
+            return sections;
         }
     }
 }

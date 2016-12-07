@@ -7,7 +7,7 @@ namespace ClassRegistration.Controllers.API
 {
     public class CourseController : ApiController
     {
-        private CourseService _courseService;
+        CourseService _courseService;
 
         public CourseController()
         {
@@ -25,10 +25,8 @@ namespace ClassRegistration.Controllers.API
                 {
                     return Ok(courses);
                 }
-                else
-                {
-                    return Ok();
-                }
+
+                return Ok();
             }
             catch (Exception ex)
             {

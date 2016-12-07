@@ -1,4 +1,4 @@
-﻿<navigation layout="row" layout-align="space-between center">
+﻿<div layout="row" layout-align="space-between center" class="umn-navigation umn-primary bg-color">
     <div layout="row" layout-align="start center">
         <h2 class="umn-accent">Course Registration</h2>
         <div ng-if="navVm.showSearch" layout="row">
@@ -12,4 +12,4 @@
         <umn-button ng-if="navVm.currentState == 'schedule'" title="'Search'" icon="'search'" direction="'left'" ui-sref="search" ng-click="navVm.go('search')" class="umn-accent"></umn-button>
         <umn-button ng-if="navVm.currentState == 'search'" title="'Calendar'" icon="'event'" direction="'left'" ng-click="navVm.go('schedule')" class="umn-accent"></umn-button>
     </div>
-</navigation>
+</div>

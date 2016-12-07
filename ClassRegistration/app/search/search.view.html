@@ -1,9 +1,12 @@
-﻿<md-content layout="column" flex>
+﻿<div layout="column" style="height: 100%;" flex>
     <umn-navigation show-search="true" search-function="searchVm.search"></umn-navigation>
-    <md-content layout="row" class="search-view">
-        <md-content flex>
+    <div layout="row" class="search-view" flex>
+		<div ng-if="searchVm.courseResults.length == 0" layout="column" layout-align="start center" flex>
+		    <h1>No results returned. Use the input above to search for a course.</h1>
+        </div>
+        <div ng-if="searchVm.courseResults.length > 0" flex class="courses">
             <umn-course course="course" ng-repeat="course in searchVm.courseResults track by $index"></umn-course>
-        </md-content>
+        </div>
         <umn-shopping-cart flex="20" hide show-gt-sm></umn-shopping-cart>
-    </md-content>
-</md-content>
+    </div>
+</div>

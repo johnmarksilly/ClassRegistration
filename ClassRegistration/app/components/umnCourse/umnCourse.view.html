@@ -1,24 +1,24 @@
 ﻿<div layout="column" class="umn-course umn-primary">
-    <div layout="column" flex>
-        <div layout="row" layout-align="space-between stretch" class="header umn-primary bg-color">
-            <div layout="row" layout-align="start center" flex="80" class="title">
-                <h1>{{courseVm.course.key}}</h1>
-                <h2>{{courseVm.course.title}}</h2>
+	<div class="information">
+        <div layout="column" flex>
+            <div layout="row" layout-align="space-between stretch" class="header umn-primary bg-color">
+                <div layout="row" layout-align="start center" flex="80" class="title">
+                    <h1>{{courseVm.course.key}}</h1>
+                    <h2>{{courseVm.course.title}}</h2>
+                </div>
+                <div layout="row" layout-align="center center" class="credits">
+                    <h2>{{courseVm.course.credits}} credits</h2>
+                </div>
             </div>
-            <div class="credits">
-                <h2>{{courseVm.course.credits}} credits</h2>
+            <div flex class="content-container">
+                <p>{{courseVm.course.description}}</p>
             </div>
         </div>
-        <div flex class="content-container">
-            <p>{{courseVm.course.description}}</p>
+        <div ng-if="courseVm.course.sections.length > 0" layout="row" layout-align="start center" ng-init="courseVm.isExpanded = false" ng-click="courseVm.isExpanded = !courseVm.isExpanded" class="button-container umn-white bg-color">
+            <umn-button title="'Sections'" icon="courseVm.isExpanded ? 'expand_less' : 'expand_more'" direction="'left'" class="umn-primary"></umn-button>
         </div>
-    </div>
-    <div layout="row" layout-align="start center" class="info-box-container umn-accent bg-color">
-        <umn-info-box ib-icon="information.icon" ib-title="information.title" ib-content="information.content" ib-direction="'right'" ng-repeat="information in courseVm.course.information track by $index"></umn-info-box>
-    </div>
-
-    <div layout="row" layout-align="start center" class="button-container umn-accent bg-color">
-        <umn-button title="'Information'" icon="'more_vert'" direction="'left'" class="umn-primary"></umn-button>
-        <umn-button title="'Add'" icon="'add_shopping_cart'" direction="'left'" class="umn-primary"></umn-button>
+	</div>
+    <div ng-if="courseVm.isExpanded" class="sections">
+        <umn-section section="section" ng-repeat="section in courseVm.course.sections track by $index"></umn-section>
     </div>
 </div>
