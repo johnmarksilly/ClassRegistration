@@ -1,3 +1,8 @@
 ﻿.schedule-view {
 
 }
+
+.schedule-view .days {
+    padding: 1em 4em;
+    overflow-y: auto;
+}

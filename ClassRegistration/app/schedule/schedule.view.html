@@ -1,3 +1,6 @@
-﻿<div layout="column" class="schedule-view" flex>
+﻿<div layout="column" class="schedule-view" style="height: 100%" flex>
     <umn-navigation show-search="false"></umn-navigation>
+    <div layout="column" class="days" flex>
+        <umn-day ng-if="day.classes.length > 0" day-key="key" day="day" ng-repeat="(key, day) in scheduleVm.courses track by $index"></umn-day>
+    </div>
 </div>

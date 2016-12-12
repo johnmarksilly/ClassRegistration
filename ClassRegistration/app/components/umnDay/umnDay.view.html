@@ -1,8 +1,8 @@
 ﻿<div class="umn-day">
     <div class="header umn-primary bg-color">
-        <h1>{{dayVm.title}}</h1>
+        <h1>{{dayVm.dayKey}}</h1>
     </div>
     <div class="classes">
-        <umn-section course="umnClass.course" section="umnClass.section" ng-repeat="umnClass in dayVm.classes track by $index"></umn-section>
+        <umn-day-course course="umnClass.course" section="umnClass.section" ng-repeat="umnClass in dayVm.day.classes track by $index"></umn-day-course>
     </div>
 </div>

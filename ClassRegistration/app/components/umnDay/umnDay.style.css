@@ -1,3 +1,24 @@
 ﻿.umn-day {
-
+    border: 0.025em solid;
+    padding-bottom: 2.5em;
 }
+
+.umn-day:not(:first-child) {
+    margin-top: 2em;
+}
+
+    .umn-day .header {
+        padding: 0.4em 1em;
+    }
+
+    .umn-day .classes {
+        margin: 0 1em;
+    }
+
+        .umn-day .classes .umn-day-course {
+            margin-top: 1em;
+        }
+
+        .umn-day .classes .umn-day-course:not(:first-child) {
+            margin-top: 2.5em;
+        }

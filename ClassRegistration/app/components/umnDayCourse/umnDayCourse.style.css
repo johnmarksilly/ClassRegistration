@@ -1,0 +1,39 @@
+﻿.umn-day-course {
+    position: relative;
+    border-width: 0.15em;
+    border-bottom-style: solid;
+    height: 5em;
+}
+
+    .umn-day-course .inner-container {
+        position: relative;
+        height: inherit;
+    }
+
+    .umn-day-course .header {
+        padding: 0 1em;
+        height: 3em;
+    }
+        
+        .umn-day-course .header h1 {
+            margin-right: 0.4em;
+        }
+
+        .umn-day-course .header h2 {
+            font-weight: 100;
+        }
+
+    .umn-day-course .info-box-container {
+        position: absolute;
+        bottom: -1.5em;
+        height: 3em;
+        padding-right: 0.4em;
+    }
+
+    .umn-day-course .button-container {
+        position: absolute;
+        right: 0;
+        bottom: -1.5em;
+        height: 3em;
+        padding-right: 0;
+    }

@@ -3,16 +3,16 @@
 
     angular
         .module('umn')
-        .controller('UmnDayController', UmnDayController);
+        .controller('UmnDayCourseController', UmnDayCourseController);
 
-    UmnDayController.$inject = [];
+    UmnDayCourseController.$inject = [];
 
-    function UmnDayController() {
+    function UmnDayCourseController() {
         var vm = this;
 
         // Variables
-        vm.day;
-        vm.dayKey;
+        vm.section;
+        vm.course;
 
         // Method Declarations
 

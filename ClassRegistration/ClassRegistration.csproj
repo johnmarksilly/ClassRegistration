@@ -194,6 +194,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\components\umnDayCourse\umnDayCourse.controller.js" />
+    <Content Include="app\components\umnDayCourse\umnDayCourse.directive.js" />
+    <Content Include="app\components\umnDayCourse\umnDayCourse.style.css" />
+    <Content Include="app\components\umnDayCourse\umnDayCourse.view.html" />
     <Content Include="app\components\umnDay\umnDay.controller.js" />
     <Content Include="app\components\umnDay\umnDay.directive.js" />
     <Content Include="app\components\umnDay\umnDay.style.css" />
